@@ -134,7 +134,7 @@ for (let i = 0; i < b.length; i++) {
 DTSTAMP:${currentUTC}
 UID:${UUIDGeneratorBrowser()}
 DTSTART;TZID=America/Los_Angeles:2023${getInitDate(day)}T${timeConversion(daysAndLocations[1])}00
-RRULE:FREQ=DAILY;INTERVAL=7;COUNT=14
+RRULE:FREQ=DAILY;INTERVAL=7;COUNT=15
 DTEND;TZID=America/Los_Angeles:2023${getInitDate(day)}T${timeConversion(daysAndLocations[3])}00
 SUMMARY:${subject + ' - ' + course}
 LOCATION:${classLocation}
