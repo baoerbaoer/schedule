@@ -72,15 +72,15 @@ function timeConversion(clean_input) {
 // initial date designation.
 function getInitDate(input) {
   if (input === "M") {
-    return "0116";
+    return "0821";
   } else if (input === "T") {
-    return "0117";
+    return "0822";
   } else if (input === "W") {
-    return "0118";
+    return "0823";
   } else if (input === "Th") {
-    return "0119";
+    return "0824";
   } else if (input === "F") {
-    return "0120";
+    return "0825";
   }
 }
 
