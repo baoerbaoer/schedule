@@ -72,15 +72,15 @@ function timeConversion(clean_input) {
 // initial date designation.
 function getInitDate(input) {
   if (input === "M") {
-    return "0821";
+    return "0115";
   } else if (input === "T") {
-    return "0822";
+    return "0116";
   } else if (input === "W") {
-    return "0823";
+    return "0117";
   } else if (input === "Th") {
-    return "0824";
+    return "0118";
   } else if (input === "F") {
-    return "0825";
+    return "0119";
   }
 }
 
@@ -133,9 +133,9 @@ for (let i = 0; i < b.length; i++) {
 `BEGIN:VEVENT
 DTSTAMP:${currentUTC}
 UID:${UUIDGeneratorBrowser()}
-DTSTART;TZID=America/Los_Angeles:2023${getInitDate(day)}T${timeConversion(daysAndLocations[1])}00
+DTSTART;TZID=America/Los_Angeles:2024${getInitDate(day)}T${timeConversion(daysAndLocations[1])}00
 RRULE:FREQ=DAILY;INTERVAL=7;COUNT=15
-DTEND;TZID=America/Los_Angeles:2023${getInitDate(day)}T${timeConversion(daysAndLocations[3])}00
+DTEND;TZID=America/Los_Angeles:2024${getInitDate(day)}T${timeConversion(daysAndLocations[3])}00
 SUMMARY:${subject + ' - ' + course}
 LOCATION:${classLocation}
 END:VEVENT\n`;
